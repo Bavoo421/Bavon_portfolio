@@ -1,0 +1,103 @@
+:root{
+  --blue-900:#0b2d4b;
+  --blue-800:#0d3b66;
+  --blue-700:#145a8a;
+  --blue-600:#1e73be;
+  --bg:#f5f8fc;
+  --text:#0f172a;
+}
+
+*{ box-sizing:border-box; }
+body{
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  color: var(--text);
+  background: #fff;
+}
+
+.navbar{
+  background: linear-gradient(90deg, var(--blue-900), var(--blue-800));
+}
+
+.navbar .nav-link{
+  color: rgba(255,255,255,.85) !important;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active{
+  color: #fff !important;
+}
+
+.hero{
+  background: linear-gradient(120deg, var(--blue-900), var(--blue-700));
+  color: #fff;
+  padding: 64px 0;
+}
+
+.hero-card{
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 18px;
+  padding: 24px;
+  backdrop-filter: blur(6px);
+}
+
+.profile-pic{
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 4px solid rgba(255,255,255,.9);
+}
+
+.section{
+  padding: 60px 0;
+}
+
+.section-title{
+  color: var(--blue-800);
+  font-weight: 800;
+}
+
+.muted{
+  color: rgba(255,255,255,.85);
+}
+
+.card-soft{
+  border: 1px solid #e8eef7;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(2, 8, 20, .06);
+}
+
+.badge-skill{
+  background: var(--bg);
+  border: 1px solid #e3ebf7;
+  color: var(--blue-800);
+  font-weight: 600;
+  padding: 10px 12px;
+  border-radius: 999px;
+}
+
+.btn-brand{
+  background: var(--blue-600);
+  border: none;
+}
+.btn-brand:hover{
+  background: var(--blue-700);
+}
+
+.footer{
+  background: var(--blue-900);
+  color: #fff;
+  padding: 22px 0;
+}
+.footer a{
+  color: #fff;
+  text-decoration: none;
+  opacity: .9;
+}
+.footer a:hover{ opacity: 1; text-decoration: underline; }
+
+.page-header{
+  background: var(--bg);
+  border-bottom: 1px solid #e8eef7;
+  padding: 26px 0;
+}
