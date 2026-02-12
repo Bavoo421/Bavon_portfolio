@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bavon Agesa | IT Portfolio</title>
+  <title>Bavon Agesa | IT & Web Developer Portfolio</title>
+
+  <meta name="description" content="Bavon Agesa — IT professional building modern web systems, database-driven platforms, and AI-powered solutions. View projects, certifications, and contact details.">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -12,13 +14,16 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="../index.html">Bavon Agesa</a>
+    <!-- FIXED: root index should NOT use ../ -->
+    <a class="navbar-brand fw-bold" href="index.html">Bavon Agesa</a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto">
+        <!-- FIXED: Home should point to index.html -->
         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="public/about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="public/certifications.html">Certifications</a></li>
@@ -36,17 +41,21 @@
         <div class="col-md-3">
           <img src="assets/myimage.jpg" class="profile-pic" alt="Bavon Agesa">
         </div>
+
         <div class="col-md-9">
-          <p class="mb-2 muted">IT • AI/ML • Web Systems • Databases</p>
+          <p class="mb-2 muted">IT Professional • Web Development • Databases • AI Integrations</p>
+
           <h1 class="fw-bold mb-2">Bavon Agesa</h1>
+
           <p class="lead mb-3">
-            I build secure, modern web-based systems and AI-powered solutions — focused on usability,
-            performance, and real-world problem solving.
+            I build modern, database-driven web systems and integrate APIs (payments, notifications, AI)
+            to solve real-world problems with clean UI and reliable backend logic.
           </p>
 
           <div class="d-flex gap-2 flex-wrap">
             <a href="public/projects.html" class="btn btn-brand px-4">View Projects</a>
             <a href="public/contact.html" class="btn btn-outline-light px-4">Hire / Collaborate</a>
+            <a href="public/about.html" class="btn btn-outline-light px-4">About Me</a>
           </div>
         </div>
       </div>
@@ -56,14 +65,20 @@
 
 <section class="section">
   <div class="container">
+
+    <!-- Quick Highlights -->
     <div class="row g-4">
       <div class="col-lg-7">
         <h2 class="section-title mb-3">Professional Summary</h2>
         <div class="card card-soft p-4">
+          <p class="mb-3">
+            I’m an IT professional with hands-on experience in web development, system support, and database management.
+            I enjoy building practical solutions such as booking systems and management platforms, while continuously improving
+            my skills in backend development, deployment, and AI-powered features.
+          </p>
           <p class="mb-0">
-            I’m an IT professional with strong skills in web development, databases, and system design.
-            I enjoy building practical systems like management platforms, booking systems, and automation tools,
-            with a growing focus on AI integrations that improve user experience and decision-making.
+            I gained strong real-world exposure during my industrial attachment at the Ministry of Labour and Social Protection,
+            supporting ICT operations across networking, hardware/software maintenance, security basics, and server-related tasks.
           </p>
         </div>
       </div>
@@ -72,42 +87,99 @@
         <h2 class="section-title mb-3">Core Skills</h2>
         <div class="card card-soft p-4">
           <div class="d-flex flex-wrap gap-2">
-            <span class="badge-skill">Web Development</span>
-            <span class="badge-skill">Bootstrap UI</span>
+            <span class="badge-skill">HTML/CSS</span>
+            <span class="badge-skill">Bootstrap</span>
             <span class="badge-skill">PHP</span>
-            <span class="badge-skill">Django</span>
+            <span class="badge-skill">Python (Django)</span>
             <span class="badge-skill">SQLite / MySQL</span>
-            <span class="badge-skill">APIs</span>
-            <span class="badge-skill">Network Security</span>
-            <span class="badge-skill">AI Integration</span>
+            <span class="badge-skill">API Integration</span>
+            <span class="badge-skill">Git & GitHub</span>
+            <span class="badge-skill">Networking</span>
+            <span class="badge-skill">Security Basics</span>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Featured Projects -->
+    <div class="row g-4 mt-1">
+      <div class="col-12">
+        <h2 class="section-title mb-3">Featured Projects</h2>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-soft p-4 h-100">
+          <h5 class="fw-bold mb-2">AI Beauty & Spa Booking System</h5>
+          <p class="text-secondary mb-3">
+            Multi-shop booking platform with AI assistant integration, payments, and notifications.
+          </p>
+          <div class="d-flex gap-2 flex-wrap">
+            <a class="btn btn-sm btn-outline-primary"
+               href="https://github.com/Bavoo421/AI-Powered-beauty-and-spa-web-based-booking-system-used-php"
+               target="_blank">GitHub</a>
+            <a class="btn btn-sm btn-brand" href="public/projects.html">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-soft p-4 h-100">
+          <h5 class="fw-bold mb-2">Hospital Management System</h5>
+          <p class="text-secondary mb-3">
+            Patient records and appointment management system built with Django and SQLite.
+          </p>
+          <div class="d-flex gap-2 flex-wrap">
+            <a class="btn btn-sm btn-outline-primary"
+               href="https://github.com/Bavoo421/hospitalmanagement"
+               target="_blank">GitHub</a>
+            <a class="btn btn-sm btn-brand" href="public/projects.html">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-soft p-4 h-100">
+          <h5 class="fw-bold mb-2">Geba Machinery Investment Website</h5>
+          <p class="text-secondary mb-3">
+            WordPress corporate website for service/product showcase and marketing.
+          </p>
+          <div class="d-flex gap-2 flex-wrap">
+            <a class="btn btn-sm btn-brand"
+               href="https://www.gebamachinerysinvestment.com/"
+               target="_blank">Live Website</a>
+            <a class="btn btn-sm btn-outline-primary" href="public/projects.html">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Navigation -->
     <div class="row g-4 mt-1">
       <div class="col-md-4">
         <div class="card card-soft p-4 h-100">
           <h5 class="fw-bold mb-2">Projects</h5>
-          <p class="mb-3">Showcase real systems you’ve built with screenshots and features.</p>
+          <p class="mb-3">See my real-world builds, tech stacks, and implementation details.</p>
           <a class="btn btn-brand" href="public/projects.html">Go to Projects</a>
         </div>
       </div>
+
       <div class="col-md-4">
         <div class="card card-soft p-4 h-100">
           <h5 class="fw-bold mb-2">Certifications</h5>
-          <p class="mb-3">Keep your training and achievements organized professionally.</p>
+          <p class="mb-3">Training and certifications from Ajira Digital, Kibabii University, and eMobilis.</p>
           <a class="btn btn-brand" href="public/certifications.html">View Certifications</a>
         </div>
       </div>
+
       <div class="col-md-4">
         <div class="card card-soft p-4 h-100">
           <h5 class="fw-bold mb-2">Contact</h5>
-          <p class="mb-3">Let people reach you fast with clean contact options.</p>
+          <p class="mb-3">Send a message directly — your contact form is live and working.</p>
           <a class="btn btn-brand" href="public/contact.html">Contact Me</a>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -117,8 +189,8 @@
     <div class="d-flex gap-3 flex-wrap">
       <a href="mailto:agesabarvon427@gmail.com">Email</a>
       <a href="https://wa.me/+254769043053">WhatsApp</a>
-      <a href="https://www.linkedin.com/">LinkedIn</a>
-      <a href="https://github.com/">GitHub</a>
+      <a href="https://www.linkedin.com/in/bavon-agesa-3553492b6/">LinkedIn</a>
+      <a href="https://github.com/Bavoo421">GitHub</a>
     </div>
   </div>
 </footer>
